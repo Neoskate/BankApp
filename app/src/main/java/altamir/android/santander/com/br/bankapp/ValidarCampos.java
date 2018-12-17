@@ -8,7 +8,7 @@ import android.widget.EditText;
 import java.util.regex.Pattern;
 
 public class ValidarCampos {
-
+    //verifica se user esta vazio
     public static boolean ValidarCampoVazio(View pView, String pMessage) {
         if (pView instanceof EditText) {
             EditText edText = (EditText) pView;
@@ -26,6 +26,7 @@ public class ValidarCampos {
         }
         return false;
     }
+    //verifica CPF
     public static boolean ValidarCPF(View pView) {
         if (pView instanceof EditText) {
             EditText edText = (EditText) pView;

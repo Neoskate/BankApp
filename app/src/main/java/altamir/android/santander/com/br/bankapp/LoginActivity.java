@@ -68,7 +68,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private boolean VerificaCampos(){
-        if (!ValidarCampos.ValidarCampoVazio(edtuser, "Preencha o campo user")) {
+
+        if (!ValidarCampos.ValidarCampoVazio(edtuser, "Preencha seu usuario com CPF ou E-mail")) {
             return false;
         }
 
@@ -85,7 +86,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             }
         }
 
-        if (!ValidarCampos.ValidarCampoVazio(edtpassword, "Preencha o campo password")) {
+        if (!ValidarCampos.ValidarCampoVazio(edtpassword, "Preencha sua Senha")) {
             return false;
         }
         return ValidarCampos.ValidarPassword(edtpassword);
